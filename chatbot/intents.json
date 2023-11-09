@@ -1,0 +1,353 @@
+{
+  "intents": [
+    {
+      "tag": "Campus",
+      "patterns": ["Can I visit the campus", "Is it possible for me to come to the campus",
+      "May I pay a visit to the campus", "Is campus visitation allowed?", 
+      "Am I permitted to tour the campus?","Can I explore the campus in person?","Is there an option for me to check out the campus?",
+      "Would it be acceptable for me to visit the campus?","Am I allowed to physically go to the campus?",
+      "Is there an open-door policy for campus visits?",
+      "Is campus access available for visitors?"],
+      "responses": [
+        "Yes! Visit our Graduate Events page to learn more about visit opportunities."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Online Degree",
+      "patterns": ["Do you offer online degrees", "Do you provide online degree programs?",
+      "Are online degrees offered at your institution?",
+      "Can I pursue a degree online through your university?",
+      "Is it possible to earn a degree via online courses?",
+      "Do you have options for distance learning degrees?"],
+      "responses": [
+        "The University of New Haven offers graduate programs in business, healthcare, technology, and more. Visit our Online Degrees page for more information."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Placement",
+      "questions": [],
+      "patterns": ["Do your school offer job placement", "Does your school provide job placement assistance?",
+      "Are there career placement services available to students?",
+      "Can students access job placement support through the school?",
+     "Is job placement assistance part of the student services?",
+     "Are there resources to help graduates find employment?"],
+      "responses": [
+        "Our nationally-recognized Career Development Center provides the skills and connections to identify a meaningful career and an opportunity for students to pursue their passion. Services include career assessments, networking opportunities, interview preparation, and more."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "University Ranking",
+      "patterns": ["what is the university ranking", "How does the university rank nationally or globally?",
+      "Can you provide information on the university's current ranking?",
+     "What is the university's position in national and international rankings?",
+      "Where does the university stand in terms of its global ranking?",
+      "Is there data available on how well the university is ranked in comparison to others?"],
+      "responses": [
+        "The University of New Haven is regularly recognized by national publications for academic quality and rigor. Visit our About page for more information."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Hybrid Programs",
+      "patterns": ["Do you offer hybrid degree programs", "Is the university offering any hybrid degree programs?",
+      "Can I find information on dual-mode or blended learning programs at your institution?",
+      "Are there any degrees available with a mix of online and on-campus components?",
+      "Do you have hybrid learning options for your degree programs?",
+      "Are there programs that combine both online and in-person classes?"],
+      "responses": [
+        "The University of New Haven’s online degrees are delivered 100 percent online in a flexible format ideal for adult learners."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "Students",
+      "patterns": ["How many students attend the University of New Haven","How many students are currently enrolled at the University of New Haven","Total number of students", "total students in university", "how many students are studying in the university"],
+      "responses": [
+        "Nearly 7,000 undergraduate and graduate students attend the University of New Haven."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "programs",
+      "patterns": ["Is the diploma different for online students", "Are the diplomas awarded to online students different from those given to on-campus students?",
+      "Do online students receive a different type of diploma compared to traditional students?",
+      "Is there a distinction in the diplomas earned by students who complete their programs online?",
+      "Are the certificates for online courses distinct from those for in-person courses?",
+      "Do graduates of online programs receive diplomas that vary from those of their in-person counterparts"],
+      "responses": [
+        "No. Graduates of our online programs earn the same diploma as on-campus students."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "University Accredited",
+      "patterns": ["Is the university regionally accredited"],
+      "responses": [
+        "The University has been accredited by the New England Commission of Higher Education since 1948 and is chartered by the General Assembly of the State of Connecticut."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "graduation",
+      "patterns": ["May I walk at graduation"],
+      "responses": [
+        "Yes! All students may participate in commencement ceremonies."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "values",
+      "patterns": ["What are the values of the University of New Haven", "What core values does the University of New Haven prioritize?",
+      "Could you elaborate on the guiding principles of the University of New Haven?",
+     "What are the foundational values that shape the University of New Haven's culture?",
+      "Can you describe the ethical values upheld by the University of New Haven?",
+      "What principles and beliefs are at the heart of the University of New Haven's mission and vision?"],
+      "responses": [
+        "Our mission is to prepare our students to lead purposeful and fulfilling lives in a global society by providing the highest-quality education through experiential, collaborative, and discovery-based learning."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "mission",
+      "patterns": ["What is the mission of the University of New Haven", "Can you tell me about the University of New Haven's mission statement?",
+      "What principles or values guide the University of New Haven's educational approach?",
+      "What is the core purpose and philosophy of the University of New Haven?",
+      "Could you provide insights into the University of New Haven's overarching goals and objectives?",
+      "What is the University of New Haven striving to achieve through its academic programs and initiatives?"],
+      "responses": [
+        "The University of New Haven is a student-centered comprehensive university with an emphasis on excellence in liberal arts and professional education. Our mission is to prepare our students to lead purposeful and fulfilling lives in a global society by providing the highest-quality education through experiential, collaborative, and discovery-based learning."
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "religious",
+      "patterns": ["What is the university’s religious affiliation"],
+      "responses": [
+        "The University of New Haven is an independent, nonsectarian institution."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "accreditation",
+      "patterns": [
+        "What’s the difference between regional and national accreditation", "Does the University of New Haven have any religious affiliations or connections?",
+        "Is the University of New Haven affiliated with any particular religious denomination?",
+        "Can you provide information about the religious background or association, if any, of the University of New Haven?",
+        "Is there a specific religious identity or influence at the University of New Haven?",
+        "Could you explain if the University of New Haven follows a particular religious tradition or values?"
+      ],
+      "responses": [
+        "Regionally accredited higher education institutions are predominantly academically oriented, non-profit institutions. Nationally accredited schools are predominantly for-profit and offer vocational, career or technical programs."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "University Found",
+      "patterns": ["When was the university founded", "What is the establishment date of the University of New Haven?",
+      "Can you tell me when the University of New Haven was founded?",
+      "When did the University of New Haven come into existence?",
+      "What is the founding year of the University of New Haven?",
+      "Could you provide information about the University of New Haven's inception date?"],
+      "responses": [
+        "The University of New Haven was founded in 1920 on the Yale campus."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "University locations",
+      "patterns": ["Where is the campus located", "What is the physical address of the University of New Haven's campus",
+     "Can you tell me the location of the University of New Haven's campus",
+      "Where can I find the University of New Haven's campus?",
+      "What is the street address of the University of New Haven's campus?",
+      "Could you provide directions to the University of New Haven's campus?"],
+      "responses": [
+        "The University of New Haven is located between New York City and Boston in the shoreline city of West Haven, Connecticut."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hay",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Whats up"
+      ],
+      "responses": [
+        "Hello!",
+        "Good to see you again!",
+        "Hi there, how can I help?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "cya",
+        "See you later",
+        "Goodbye",
+        "I am Leaving",
+        "Have a Good day"
+      ],
+      "responses": [
+        "Sad to see you go :(",
+        "Talk to you later",
+        "Goodbye!",
+        "Have a nice day",
+        "Bye! Come back again"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "CourtesyGreeting",
+      "patterns": [
+        "How are you?",
+        "Hi how are you?",
+        "Hello how are you?",
+        "Hola how are you?",
+        "How are you doing?",
+        "Hope you are doing well?",
+        "Hello hope you are doing well?"
+      ],
+      "responses": [
+        "I am great, how are you?",
+        "How are you? I am great thanks!",
+        "I am good thank you, how are you?",
+        "I am great, how are you?",
+        "How are you? I am great thanks!",
+        "I am good thank you, how are you?",
+        "Good thank you, how are you?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "OK thank you",
+        "OK thanks",
+        "OK",
+        "ok bye",
+        "Thank you",
+        "That's helpful",
+        "Thanks for the help"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You're most welcome!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "about",
+      "patterns": ["Who are you?", "What are you?", "Who you are?"],
+      "responses": [
+        "I'm ZOAX, your bot assistant",
+        "I'm ZOAX, an Artificial Intelligent bot"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old",
+        "how old is ZOAX",
+        "what is your age",
+        "how old are you",
+        "age?"
+      ],
+      "responses": ["I am 1 years old!", "1 years young!"],
+      "context_set": ""
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "what should I call you",
+        "whats your name?"
+      ],
+      "responses": [
+        "You can call me ZOAX.",
+        "My name is ZOAX",
+        "I'm ZOAX.",
+        "Just call me as ZOAX"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Could you help me?",
+        "give me a hand please",
+        "Can you help?",
+        "What can you do for me?",
+        "I need a support",
+        "I need a help",
+        "support me please"
+      ],
+      "responses": [
+        "Tell me how can assist you",
+        "Tell me your problem to assist you",
+        "Yes Sure, How can I support you"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "creator",
+      "patterns": ["who creates you", "who developed you", "who invented you"],
+      "responses": ["Amal", "I was created by Amal"],
+      "context_set": ""
+    },
+    {
+      "tag": "shutup",
+      "patterns": [
+        "Be quiet",
+        "Shut up",
+        "Stop talking",
+        "Enough talking",
+        "Please be quiet",
+        "Quiet",
+        "Shhh"
+      ],
+      "responses": [
+        "I am sorry to disturb you",
+        "Fine, sorry to disturb you",
+        "OK, sorry to disturb you"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "confirmations_positive",
+      "patterns": ["yes", "yeah", "ok", "kk"],
+      "responses": ["Mmm"],
+      "context_set": ""
+    },
+    {
+      "tag": "confirmations_negative",
+      "patterns": ["no", "no thanks", "its ok"],
+      "responses": ["Mmm"],
+      "context_set": ""
+    }
+  ]
+}

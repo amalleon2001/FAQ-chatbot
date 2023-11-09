@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chat Bot</title>
+    <style>
+        body{
+            display: flex; justify-content: center; margin-top: 30px;
+        }
+        .chat-box{
+            width: 500px; height: 660px;
+            background: rgb(137, 177, 212);
+            border-radius: 10px;
+        }
+        h1{
+            margin: 20px; color: rgb(37, 82, 118); font-family: monospace;
+            font-size: 40px; text-align: center;
+        }
+        input{
+            width: 320px; height: 50px; border-radius: 5px; outline: none;
+            border: 1px solid rgb(37, 82, 118); margin: 20px 10px 20px 20px; 
+            font-size: 20px;
+        }
+        button{
+            width: 120px; height: 50px; border: 1px solid rgb(37, 82, 118); 
+            border-radius: 5px; font-size: 20px; cursor: pointer;
+        }
+        .chat-area{ 
+            display: block; padding-top: 10px; padding-bottom: 10px;
+            width: 450; height: 460px; background: rgb(180, 204, 225);
+            overflow: auto;
+        }
+        p{
+            font-family: monospace;
+            padding: 10px 30px; font-size: 18px; margin: 10px 20px 0px 20px;
+            background: rgb(137, 177, 212); border-radius: 20px;
+        }
+        .p-bot{
+            background: whitesmoke;
+        }
+        span{
+            margin-right: 20px;
+        }
+        
+        *::-webkit-scrollbar{
+            width: 5px;
+        }
+        *::-webkit-scrollbar-track{
+            background: #979696; 
+            border-radius: 6px;
+        }
+        *::-webkit-scrollbar-thumb{
+            background: rgb(192, 192, 192); 
+            border-radius: 6px;
+        }
+        *::-webkit-scrollbar-thumb:hover{
+            background: #888;
+        }
+    </style>
+
+</head>
+<body>
+	<div class = 'chat-box'>
+        <h1>ZOAX</h1>
+        <div class = 'chat-area'></div>
+        <input type="text" id = 'message' />
+        <button id = "button">Send</button>
+    </div>
+</body>
+</html>
+
+<script>
+    document.getElementById("button").onclick = function() {
+        const msg = document.querySelector("#message").value;
+        postMsg('USER',msg)
+        fetch("/chat?message="+msg, {method:'GET'}).then(result => {
+            result.text().then(result => {
+                postMsg('ZOAX',result)
+                document.querySelector("#message").value = '';
+            })
+        })
+    }
+    const postMsg = function(src,msg){
+        const p = document.createElement("P"), span = document.createElement("span"),
+            brk = document.createElement('br');
+        if(src == 'ZOAX') p.className = 'p-bot';
+        span.innerHTML = src; p.append(span,brk,msg);
+        document.querySelector(".chat-area").append(p);
+        p.scrollIntoView({ behavior: "smooth" });
+    }
+</script>
